@@ -2,7 +2,7 @@ API Meu Arcevo - README
 
 BOOA NOIITEE!!
 
-API criada por Thiago da silva, 2 Modulo - Desenvolvimento de sistemas
+API criada por Thiago da silva e Wilson Souza, 2 Modulo - Desenvolvimento de sistemas
 Api Criada para nota da N2 na eletiva do Professor Silvio.
 
 Introdução
