@@ -1,0 +1,101 @@
+1. Livros
+
+O endpoint base para livros é /livros. As operações permitidas são:
+
+GET /livros: Lista todos os livros.
+POST /livros: Cria um novo livro.
+GET /livros/:id: (Se quiseres adicionar essa funcionalidade) Obtém um livro específico pelo ID.
+PUT /livros/:id: Atualiza um livro específico pelo ID.
+DELETE /livros/:id: Deleta um livro específico pelo ID.
+Exemplos de URLs para livros:
+
+GET http://localhost:3001/livros – Lista todos os livros.
+POST http://localhost:3001/livros – Adiciona um novo livro.
+
+Exemplo
+
+{
+    "titulo": "Dom Quixote", 
+    "autor": "Miguel de Cervantes", 
+    "ano": 1605
+}
+
+PUT http://localhost:3001/livros/1 – Atualiza o livro com ID 1.
+
+Exemplo
+
+{
+    "titulo": "Dom Quixote", 
+    "autor": "Miguel de Cervantes", 
+    "ano": 1606
+}
+
+DELETE http://localhost:3001/livros/1 – Deleta o livro com ID 1.
+
+===================================================================================================
+
+2. Alunos
+
+O endpoint base para alunos é /alunos. As operações permitidas são:
+
+GET /alunos: Lista todos os alunos.
+POST /alunos: Cria um novo aluno.
+GET /alunos/:id: (Se quiseres adicionar essa funcionalidade) Obtém um aluno específico pelo ID.
+PUT /alunos/:id: Atualiza um aluno específico pelo ID.
+DELETE /alunos/:id: Deleta um aluno específico pelo ID.
+Exemplos de URLs para alunos:
+
+GET http://localhost:3001/alunos – Lista todos os alunos.
+POST http://localhost:3001/alunos – Adiciona um novo aluno.
+
+Exemplo
+
+{
+    "nome": "Thiago Silva", 
+    "matricula": 
+    "20231001"
+}
+
+PUT http://localhost:3001/alunos/1 – Atualiza o aluno com ID 1.
+
+Exemplo
+
+{
+    "nome": "Thiago da Silva", 
+    "matricula": 
+    "20231001"
+}
+
+DELETE http://localhost:3001/alunos/1 – Deleta o aluno com ID 1.
+
+===================================================================================================
+
+
+3. Empréstimos
+
+O endpoint base para empréstimos é /emprestimos. As operações permitidas são:
+
+GET /emprestimos: Lista todos os empréstimos.
+POST /emprestimos: Cria um novo empréstimo (um livro emprestado para um aluno).
+PUT /emprestimos/:id/devolucao: Registra a devolução de um livro.
+Exemplos de URLs para empréstimos:
+
+GET http://localhost:3001/emprestimos – Lista todos os empréstimos.
+POST http://localhost:3001/emprestimos – Adiciona um novo empréstimo.
+
+Exemplo
+
+{
+    "livro_id": 1, 
+    "aluno_id": 1, 
+    "data_emprestimo": 
+    "2024-10-20"
+}
+
+PUT http://localhost:3001/emprestimos/1/devolucao – Registra a devolução do empréstimo com ID 1.
+
+Exemplo
+
+{
+    "data_devolucao": "2024-10-25"
+}

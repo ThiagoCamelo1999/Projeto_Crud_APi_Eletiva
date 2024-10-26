@@ -1,0 +1,72 @@
+API Meu Arcevo - README
+
+BOOA NOIITEE!!
+
+API criada por Thiago da silva, 2 Modulo - Desenvolvimento de sistemas
+Api Criada para nota da N2 na eletiva do Professor Silvio.
+
+Introdução
+Esta documentação descreve a API desenvolvida para o gerenciamento de uma biblioteca. 
+A API permite a administração de três entidades principais: Livros, Alunos e Empréstimos, 
+com suporte completo para operações de CRUD (Create, Read, Update, Delete). 
+O sistema de empréstimos também permite o controle do empréstimo e devolução de livros.
+
+A API foi desenvolvida utilizando Node.js com Express e um banco de dados SQLite para armazenamento das informações.
+
+Endpoints da API
+Abaixo estão descritos os endpoints disponíveis para interagir com as entidades da biblioteca. Todas as rotas seguem o padrão http://localhost:3001.
+
+1. Livros (/livros)
+
+GET /livros
+Retorna uma lista de todos os livros cadastrados na biblioteca.
+
+POST /livros
+Adiciona um novo livro à biblioteca.
+
+PUT /livros/:id
+Atualiza os dados de um livro específico.
+
+DELETE /livros/:id
+Remove um livro da biblioteca.
+
+2. Alunos (/alunos)
+
+GET /alunos
+Retorna uma lista de todos os alunos cadastrados.
+
+POST /alunos
+Adiciona um novo aluno ao sistema.
+
+PUT /alunos/:id
+Atualiza os dados de um aluno específico.
+
+DELETE /alunos/:id
+Remove um aluno do sistema.
+
+3. Empréstimos (/emprestimos)
+
+GET /emprestimos
+Retorna uma lista de todos os empréstimos registrados.
+
+POST /emprestimos
+Cria um novo registro de empréstimo de um livro para um aluno.
+
+PUT /emprestimos/:id/devolucao
+Registra a devolução de um livro emprestado.
+
+Banco de Dados
+O banco de dados utilizado é o SQLite. O armazenamento padrão é em memória, ou seja, os dados serão perdidos quando o servidor for reiniciado. 
+No entanto, o banco de dados pode ser facilmente modificado para persistir em um arquivo.
+
+Considerações Finais
+Procurei fazer com que esta API fosse um exemplo básico de gerenciamento de uma biblioteca. 
+Criando rotas bem simples que podem ser estendidas para incluir novas funcionalidades conforme necessário. 
+O uso do banco de dados SQLite torna o desenvolvimento leve e bem ágil, 
+sendo possível migrar para outro sistema de banco de dados conforme o projeto evolui.
+
+Para dúvidas ou mais informações sobre como customizar ou integrar essa API com outros sistemas, 
+entre em contato com o time de desenvolvimento.
+
+Ass. Thiago da SIlva Barbosa Camelo
+Github.
